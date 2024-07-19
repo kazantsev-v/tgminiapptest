@@ -18,5 +18,5 @@ search.addEventListener('click', async function () {
     let response = await axios.get(`/search`, { params: { theme: select } });
     USER = response.data;
     console.log(USER);
-    userFind.innerHTML = `Найден пользователь <a href="https://t.me/${USER.userid}">Name</a>`
+    userFind.innerHTML = `Найден пользователь <a href="https://t.me/${USER.userid}">Наме</a>`
 });
