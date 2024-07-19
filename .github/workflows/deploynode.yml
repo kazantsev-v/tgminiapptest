@@ -16,14 +16,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:       
     - name: Deploy using ssh
-      uses: appleboy/ssh-action@master
+      uses: kazantsev-v/tgminiapptest@main
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          cd /var/www/youtube.com/
+          cd /nodeserv
           git pull origin main
           git status
           npm install --only=prod
