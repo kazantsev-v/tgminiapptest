@@ -1,0 +1,67 @@
+body {
+    background-color: bisque;
+}
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+.head {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+}
+.button p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.text {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.theme {
+    width: 300px;
+    height: 50px;
+    background-color: bisque;
+    border: 0px solid #000;
+    border-radius: 30px; 
+    padding: 5px 10px;
+    cursor: pointer;
+    appearance: none; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.theme option {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.hide {
+    display: none;
+}
+.find {
+    text-align: center;
+}
+.user-find {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
