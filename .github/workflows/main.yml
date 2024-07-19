@@ -18,4 +18,4 @@ jobs:
       # Build
       - run: npm ci
       # Deploy
-      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . 91.108.243.98:/nodeserv
+      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . 91.108.243.98:22/nodeserv
