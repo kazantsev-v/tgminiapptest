@@ -29,7 +29,7 @@ server.listen(port, () => {
   console.log(`App listening on https://localhost:${port}`);
 });
 
-// Настройка БД
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 let mongoose = require('mongoose');
 mongoose.connect('mongodb://91.108.243.98:27017/tgweb', {
     authSource: "admin",
@@ -37,15 +37,16 @@ mongoose.connect('mongodb://91.108.243.98:27017/tgweb', {
     pass: "Cat190808_190808!"
 });
 
-// Схемы
+// пїЅпїЅпїЅпїЅпїЅ
 let usersSchema = new mongoose.Schema({
     userid: String,
-    theme: String
+    theme: String,
+    name: String
 });
 
 let User = mongoose.model('users', usersSchema);
 
-// Профиль пользователя
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 app.get(`/search`, async function (req, res) {
     console.log("yesssssssssssssssssssssssssssssss")
     let theme = req.query.theme;
